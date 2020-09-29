@@ -15,6 +15,7 @@
 		C486BD0A2522D5A300D423CE /* ZXSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C486BD062522D5A300D423CE /* ZXSearchBar.m */; };
 		C486BD0D2522D5BE00D423CE /* ZXSearchBar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C486BD0B2522D5BE00D423CE /* ZXSearchBar.podspec */; };
 		C486BD0E2522D5BE00D423CE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C486BD0C2522D5BE00D423CE /* LICENSE */; };
+		C8DA040945D09C781D6782DE /* Pods_ZXSearchBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299AF708B239EA46917D20DF /* Pods_ZXSearchBar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		087020AF11F4ECAE85990774 /* Pods-ZXSearchBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXSearchBar.release.xcconfig"; path = "Target Support Files/Pods-ZXSearchBar/Pods-ZXSearchBar.release.xcconfig"; sourceTree = "<group>"; };
+		299AF708B239EA46917D20DF /* Pods_ZXSearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXSearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		988D606118E9E489BEE795E0 /* Pods-ZXSearchBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXSearchBar.debug.xcconfig"; path = "Target Support Files/Pods-ZXSearchBar/Pods-ZXSearchBar.debug.xcconfig"; sourceTree = "<group>"; };
 		C486BCE82522D3F000D423CE /* ZXSearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZXSearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C486BCEC2522D3F000D423CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C486BCF12522D3F000D423CE /* ZXSearchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXSearchBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DA040945D09C781D6782DE /* Pods_ZXSearchBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD869B314FE3BB1B2F9232F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				299AF708B239EA46917D20DF /* Pods_ZXSearchBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8D976FAC1AD155DD08DDB5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				988D606118E9E489BEE795E0 /* Pods-ZXSearchBar.debug.xcconfig */,
+				087020AF11F4ECAE85990774 /* Pods-ZXSearchBar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C486BCDE2522D3F000D423CE = {
 			isa = PBXGroup;
 			children = (
 				C486BCEA2522D3F000D423CE /* ZXSearchBar */,
 				C486BCF52522D3F000D423CE /* ZXSearchBarTests */,
 				C486BCE92522D3F000D423CE /* Products */,
+				B8D976FAC1AD155DD08DDB5E /* Pods */,
+				AD869B314FE3BB1B2F9232F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,7 +107,7 @@
 			children = (
 				C486BD0C2522D5BE00D423CE /* LICENSE */,
 				C486BD0B2522D5BE00D423CE /* ZXSearchBar.podspec */,
-				C486BD022522D5A300D423CE /* ZXSearchBar */,
+				C486BD022522D5A300D423CE /* SearchBar */,
 				C486BCEC2522D3F000D423CE /* Info.plist */,
 			);
 			path = ZXSearchBar;
@@ -98,15 +122,15 @@
 			path = ZXSearchBarTests;
 			sourceTree = "<group>";
 		};
-		C486BD022522D5A300D423CE /* ZXSearchBar */ = {
+		C486BD022522D5A300D423CE /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				C486BD032522D5A300D423CE /* UITableView+ActivityIndicator.h */,
-				C486BD052522D5A300D423CE /* UITableView+ActivityIndicator.m */,
 				C486BD042522D5A300D423CE /* ZXSearchBar.h */,
 				C486BD062522D5A300D423CE /* ZXSearchBar.m */,
+				C486BD032522D5A300D423CE /* UITableView+ActivityIndicator.h */,
+				C486BD052522D5A300D423CE /* UITableView+ActivityIndicator.m */,
 			);
-			path = ZXSearchBar;
+			path = SearchBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +152,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C486BCFC2522D3F000D423CE /* Build configuration list for PBXNativeTarget "ZXSearchBar" */;
 			buildPhases = (
+				29126BB92F79716AA847FB91 /* [CP] Check Pods Manifest.lock */,
 				C486BCE32522D3F000D423CE /* Headers */,
 				C486BCE42522D3F000D423CE /* Sources */,
 				C486BCE52522D3F000D423CE /* Frameworks */,
@@ -214,6 +239,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29126BB92F79716AA847FB91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZXSearchBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C486BCE42522D3F000D423CE /* Sources */ = {
@@ -362,6 +412,7 @@
 		};
 		C486BCFD2522D3F000D423CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 988D606118E9E489BEE795E0 /* Pods-ZXSearchBar.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -371,6 +422,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ZXSearchBar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +437,7 @@
 		};
 		C486BCFE2522D3F000D423CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087020AF11F4ECAE85990774 /* Pods-ZXSearchBar.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -394,6 +447,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ZXSearchBar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
