@@ -1,0 +1,32 @@
+PODS:
+  - CustomRefreshView (1.0.2):
+    - CustomRefreshView/RefreshView (= 1.0.2)
+    - MJRefresh
+  - CustomRefreshView/RefreshView (1.0.2):
+    - MJRefresh
+  - IQKeyboardManager (6.5.4)
+  - Masonry (1.1.0)
+  - MJRefresh (3.3.1)
+
+DEPENDENCIES:
+  - CustomRefreshView
+  - IQKeyboardManager
+  - Masonry
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - IQKeyboardManager
+    - Masonry
+    - MJRefresh
+  https://github.com/leblanc-zx/ZXSpecs.git:
+    - CustomRefreshView
+
+SPEC CHECKSUMS:
+  CustomRefreshView: ab16dbe6a9d5aa41382e3a84570951a5da2010f2
+  IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+
+PODFILE CHECKSUM: a2eda171a4ff4c4ecb8bd05402db1d1d5104d1a5
+
+COCOAPODS: 1.9.3

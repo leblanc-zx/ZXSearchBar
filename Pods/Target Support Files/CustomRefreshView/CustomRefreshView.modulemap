@@ -1,0 +1,6 @@
+framework module CustomRefreshView {
+  umbrella header "CustomRefreshView-umbrella.h"
+
+  export *
+  module * { export * }
+}
