@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		C486BCF22522D3F000D423CE /* ZXSearchBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C486BCE82522D3F000D423CE /* ZXSearchBar.framework */; };
 		C486BCF72522D3F000D423CE /* ZXSearchBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C486BCF62522D3F000D423CE /* ZXSearchBarTests.m */; };
-		C486BCF92522D3F000D423CE /* ZXSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = C486BCEB2522D3F000D423CE /* ZXSearchBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C486BD072522D5A300D423CE /* UITableView+ActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = C486BD032522D5A300D423CE /* UITableView+ActivityIndicator.h */; };
+		C486BD082522D5A300D423CE /* ZXSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = C486BD042522D5A300D423CE /* ZXSearchBar.h */; };
+		C486BD092522D5A300D423CE /* UITableView+ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C486BD052522D5A300D423CE /* UITableView+ActivityIndicator.m */; };
+		C486BD0A2522D5A300D423CE /* ZXSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C486BD062522D5A300D423CE /* ZXSearchBar.m */; };
+		C486BD0D2522D5BE00D423CE /* ZXSearchBar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C486BD0B2522D5BE00D423CE /* ZXSearchBar.podspec */; };
+		C486BD0E2522D5BE00D423CE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C486BD0C2522D5BE00D423CE /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +29,16 @@
 
 /* Begin PBXFileReference section */
 		C486BCE82522D3F000D423CE /* ZXSearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZXSearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C486BCEB2522D3F000D423CE /* ZXSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXSearchBar.h; sourceTree = "<group>"; };
 		C486BCEC2522D3F000D423CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C486BCF12522D3F000D423CE /* ZXSearchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXSearchBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C486BCF62522D3F000D423CE /* ZXSearchBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSearchBarTests.m; sourceTree = "<group>"; };
 		C486BCF82522D3F000D423CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C486BD032522D5A300D423CE /* UITableView+ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ActivityIndicator.h"; sourceTree = "<group>"; };
+		C486BD042522D5A300D423CE /* ZXSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSearchBar.h; sourceTree = "<group>"; };
+		C486BD052522D5A300D423CE /* UITableView+ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ActivityIndicator.m"; sourceTree = "<group>"; };
+		C486BD062522D5A300D423CE /* ZXSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSearchBar.m; sourceTree = "<group>"; };
+		C486BD0B2522D5BE00D423CE /* ZXSearchBar.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ZXSearchBar.podspec; sourceTree = SOURCE_ROOT; };
+		C486BD0C2522D5BE00D423CE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +81,9 @@
 		C486BCEA2522D3F000D423CE /* ZXSearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				C486BCEB2522D3F000D423CE /* ZXSearchBar.h */,
+				C486BD0C2522D5BE00D423CE /* LICENSE */,
+				C486BD0B2522D5BE00D423CE /* ZXSearchBar.podspec */,
+				C486BD022522D5A300D423CE /* ZXSearchBar */,
 				C486BCEC2522D3F000D423CE /* Info.plist */,
 			);
 			path = ZXSearchBar;
@@ -86,6 +98,17 @@
 			path = ZXSearchBarTests;
 			sourceTree = "<group>";
 		};
+		C486BD022522D5A300D423CE /* ZXSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				C486BD032522D5A300D423CE /* UITableView+ActivityIndicator.h */,
+				C486BD052522D5A300D423CE /* UITableView+ActivityIndicator.m */,
+				C486BD042522D5A300D423CE /* ZXSearchBar.h */,
+				C486BD062522D5A300D423CE /* ZXSearchBar.m */,
+			);
+			path = ZXSearchBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +116,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C486BCF92522D3F000D423CE /* ZXSearchBar.h in Headers */,
+				C486BD082522D5A300D423CE /* ZXSearchBar.h in Headers */,
+				C486BD072522D5A300D423CE /* UITableView+ActivityIndicator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +201,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C486BD0E2522D5BE00D423CE /* LICENSE in Resources */,
+				C486BD0D2522D5BE00D423CE /* ZXSearchBar.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C486BD092522D5A300D423CE /* UITableView+ActivityIndicator.m in Sources */,
+				C486BD0A2522D5A300D423CE /* ZXSearchBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
